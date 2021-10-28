@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda Aulia</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- loader -->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+    <!--header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.facebook.com/ananda.rizky.5855/"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://github.com/Ananda28?tab=repositories"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/anandaaaao/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+        <header>
+            <div class="container">
+                <h1><a href="index.html">Ananda</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- label -->
+	    <section class="label">
+		    <div class="container">
+			    <p>Home / Contact</p>
+		    </div>
+	    </section>
+
+        <!-- service -->
+	<section class="contact">
+		<div class="container">
+			<h3>CONTACT INFO</h3>
+			<div class="box">
+				<div class="col-4">
+					<h4>Address</h4>
+					<p>Jl. Anggrek V, Tambun, KarangSatria, Bekasi 175110</p>
+				</div>
+				<div class="col-4">
+					<h4>Email</h4>
+					<p>anndaaulia@gmail.com</p>
+				</div>
+				<div class="col-4">
+					<h4>Telp.</h4>
+					<p>(021) 5672829</p>
+				</div>
+				<div class="col-4">
+					<h4>Hp</h4>
+					<p>08953829202</p>
+				</div>
+			</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3700950246416!2d107.04007631404407!3d-6.2148261626015335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ed20a663a51%3A0xb393b7f3b5c74728!2sGg.%20Anggrek%20V%2C%20Karangsatria%2C%20Kec.%20Tambun%20Utara%2C%20Bekasi%2C%20Jawa%20Barat%2017510!5e0!3m2!1sid!2sid!4v1635444521560!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+
+        <!--Form-->
+        <div class="form">
+            <div class="container">
+                <h3>Form</h3>
+                    <table>
+                        <tr>
+                            <td><label for="namL">Nama Lengkap</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="namL" required maxlength="25"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="name">Nama Panggilan</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="name" maxlength="8"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td>:</td>
+                            <td><input type="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="umur">Umur</label></td>
+                            <td>:</td>
+                            <td><input type="number" name="umur" required min="15" max="25"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deskripsi">Deskripsi Diri</label></td>
+                            <td>:</td>
+                            <td><textarea name="deskripsi" required cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="negara">Kewarganegaraan</label></td>
+                            <td>:</td>
+                            <td><select name="negara">
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Singapura">Singapura</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><button class="btnsub" type="submit">Submit</button></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+	</section>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <small>Copyright &copy; 2021 - Ananda. All Rights Reserved.</small>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+</body>
+</html>
