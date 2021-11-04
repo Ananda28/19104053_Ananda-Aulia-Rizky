@@ -1,0 +1,9 @@
+.container-md {
+    border: 1px solid red;
+}
+
+.bg-custom {
+    background:  #db292f;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
