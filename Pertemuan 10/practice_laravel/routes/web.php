@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\myController;
+use App\Http\Controllers\MyController;
 use App\Http\Controllers\StudentController;
 
 /*
@@ -15,24 +15,12 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-// Kita harus melewati controllernya dulu
-// Ketika kita mengakses url /beranda dengan method GET
-// maka kita akan diarahkan ke controller dengan
-// nama classnya adalah myController dan 
-// methodnya adalah index
-
-// Penulisan di laravel 7
-// Route::get('/beranda', 'myController@index');
-
-// Penulisan di laravel 8
-Route::get('/beranda', [myController::class, 'index']);
-
-// Kita langsung ke viewnya
-//Route::view('/beranda', 'beranda');
+// Menuju ke controller MyController
+Route::get('/', [MyController::class, 'index']);
 
 Route::get('/mahasiswa', [StudentController::class, 'index']);
 Route::get('/mahasiswa/create', [StudentController::class, 'create']);
